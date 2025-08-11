@@ -1,0 +1,52 @@
+[
+    {
+        "retrieval_ground_truth": [
+            {
+                "document_id": "1",
+                "query_relevance_label": 4
+            },
+            {
+                "document_id": "2",
+                "query_relevance_label": 2
+            },
+            {
+                "document_id": "3",
+                "query_relevance_label": 3
+            }
+        ],
+        "ground_truth_label_min": 0,
+        "ground_truth_label_max": 10,
+        "ndcg_threshold": 0.5,
+        "xdcg_threshold": 50,
+        "fidelity_threshold": 0.5,
+        "top1_relevance_threshold": 50,
+        "top3_max_relevance_threshold": 50,
+        "total_retrieved_documents_threshold": 50,
+        "total_ground_truth_documents_threshold": 50
+    },
+    {
+        "retrieval_ground_truth": [
+            {
+                "document_id": "4",
+                "query_relevance_label": 6
+            },
+            {
+                "document_id": "5",
+                "query_relevance_label": 4
+            },
+            {
+                "document_id": "6",
+                "query_relevance_label": 3
+            }
+        ],
+        "ground_truth_label_min": 0,
+        "ground_truth_label_max": 10,
+        "ndcg_threshold": 0.7,
+        "xdcg_threshold": 70,
+        "fidelity_threshold": 0.7,
+        "top1_relevance_threshold": 60,
+        "top3_max_relevance_threshold": 70,
+        "total_retrieved_documents_threshold": 50,
+        "total_ground_truth_documents_threshold": 50
+    }
+]

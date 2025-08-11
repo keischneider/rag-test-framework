@@ -1,0 +1,7 @@
+[
+    {
+        "query": "I forgot my PIN",
+        "context": "If you have forgotten your card PIN, for security reasons we cannot display the existing PIN. You can reset it in one of the following ways: Via Mobile Banking App Log in and go to Cards → Manage Card → Change PIN. Follow the on-screen prompts to set a new 4-digit PIN. At an ATM Insert your card, choose PIN Services or Change PIN. Enter your current PIN (if known) or select Forgot PIN to trigger a reset process. By Phone Call our 24/7 Customer Service on 1-800-555-0199. We will verify your identity using security questions before issuing a PIN reset. In Branch Bring a valid photo ID and your card to any of our branches. Our staff can assist you with setting a new PIN instantly. Security Note: Never share your PIN with anyone. If you suspect your card details have been compromised, report it immediately so we can block the card and issue a replacement.",
+        "response": "If you forget your card PIN, it cannot be shown for security reasons, but you can reset it via the mobile app, at an ATM, by calling customer service, or by visiting a branch. Always keep your PIN private and report any suspected compromise immediately."
+    }
+]

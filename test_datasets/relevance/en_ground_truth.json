@@ -1,0 +1,7 @@
+[
+    {
+        "query": "What was my last trip to McDonalds?",
+        "response": "Your last trip to McDonald’s was on Saturday, August 2nd, 2025, around 1:15 PM. You headed to the McDonald’s located at 123 Maple Street, Springfield. The total came to $8.45, including tax.",
+        "ground_truth": "The last trip to McDonalds was on Monday August 2nd, 2025, at 123 Maple Street, the total cost was $8.45."
+    }
+]

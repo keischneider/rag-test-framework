@@ -1,0 +1,7 @@
+[
+    {
+        "query": "Zapomněl jsem PIN",
+        "context": "Pokud jste zapomněli PIN ke své kartě, z bezpečnostních důvodů vám nemůžeme zobrazit stávající PIN. Můžete si jej obnovit jedním z následujících způsobů: Prostřednictvím mobilní bankovní aplikace – Přihlaste se a přejděte na Karty → Správa karty → Změnit PIN. Postupujte podle pokynů na obrazovce a nastavte nový čtyřmístný PIN. V bankomatu – Vložte svou kartu, zvolte Služby PIN nebo Změnit PIN. Zadejte svůj aktuální PIN (pokud jej znáte), nebo vyberte Zapomněl(a) jsem PIN pro spuštění procesu obnovení. Telefonicky – Zavolejte na náš zákaznický servis, který je k dispozici 24/7, na číslo 1-800-555-0199. Před resetem PIN ověříme vaši totožnost pomocí bezpečnostních otázek. Na pobočce – Přineste platný průkaz totožnosti a svou kartu na kteroukoliv z našich poboček. Náš personál vám okamžitě pomůže nastavit nový PIN. Bezpečnostní upozornění: PIN nikdy s nikým nesdílejte. Pokud máte podezření, že byly údaje o vaší kartě zneužity, okamžitě to nahlaste, abychom mohli kartu zablokovat a vystavit novou.",
+        "response": "Pokud zapomenete PIN ke své kartě, z bezpečnostních důvodů vám jej nemůžeme zobrazit, ale můžete si jej obnovit prostřednictvím mobilní aplikace, v bankomatu, zavoláním na zákaznický servis nebo návštěvou pobočky. PIN nikdy nesdílejte s nikým a při podezření na jeho zneužití to okamžitě nahlaste."
+    }
+]
