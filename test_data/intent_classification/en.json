@@ -1,0 +1,10 @@
+[
+    {
+        "user_query": "What is my account balance?",
+        "intent": "check_balance"
+    },
+    {
+        "user_query": "How much did I spent on groceries and restaurants last month?",
+        "intent": "summarize_expenses"
+    }
+]

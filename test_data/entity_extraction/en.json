@@ -1,0 +1,23 @@
+[
+    {
+        "user_query": "How much did I spent on groceries and restaurants last month?",
+        "extracted_entities": [
+            {
+                "entity": "expense_category",
+                "value": "groceries"
+            },
+            {
+                "entity": "expense_category",
+                "value": "restaurants"
+            },
+            {
+                "entity": "time_period",
+                "value": "last month"
+            },
+            {
+                "entity": "asset_flow_direction",
+                "value": "spent"
+            }
+        ]
+    }
+]

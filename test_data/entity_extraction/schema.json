@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "user_query": {"type": "string"},
+      "extracted_entities": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "entity": {"type": "string"},
+            "value": {"type": "string"}
+          },
+          "required": ["entity", "value"]
+        }
+      }
+    },
+    "required": ["user_query", "extracted_entities"]
+  }
+}

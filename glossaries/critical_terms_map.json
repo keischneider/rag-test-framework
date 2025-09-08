@@ -1,0 +1,32 @@
+[
+    {
+        "account": {
+            "sk": "účet",
+            "cz": "účet",
+            "hu": "számla",
+            "ro": "cont",
+            "cr": "račun",
+            "sr": "račun"
+        }
+    },
+    {
+        "balance": {
+            "sk": "zostatok",
+            "cz": "zůstatek",
+            "hu": "egyenleg",
+            "ro": "sold",
+            "cr": "stanje",
+            "sr": "stanje"
+        }
+    },
+    {
+        "transaction": {
+            "sk": "transakcia",
+            "cz": "transakce",
+            "hu": "tranzakció",
+            "ro": "tranzacție",
+            "cr": "transakcija",
+            "sr": "transakcija"
+    }
+    }
+]

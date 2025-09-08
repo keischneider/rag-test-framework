@@ -1,0 +1,10 @@
+[
+    {
+        "query": "I forgot my PIN",
+        "pattern": "\\b\\d{4}\\b"
+    },
+    {
+        "query": "How much is my balance?",
+        "pattern": "\\b-?\\d*\\.\\d+\\b"
+    }
+]
