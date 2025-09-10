@@ -1,3 +1,4 @@
+import json
 import pytest
 import os
 from dotenv import load_dotenv
@@ -8,6 +9,8 @@ from e2e.relevance import evaluate_relevance
 from utils.miscellanous import read
 from utils.reporter import publish_report
 from openai import OpenAI
+from test_data.fetcher import fetch_data
+from test_data.formatter import format_json
 
 load_dotenv()
 
@@ -22,14 +25,21 @@ load_dotenv()
 # 2. The evaluation is performed on the input.
 # 3. The evaluation outputs are then aggregated and reported.
 
+# openai client setup:
+    # response = OpenAI(api_key=os.getenv("OPENAI_API_KEY")).responses.create(
+    #     model="gpt-5-mini",
+    #     input="Write a one-sentence bedtime story about a unicorn."
+    # )
+    # print(response.output_text)
 
+
+# run the test with 'PYTHONPATH=. pytest -s -m test'
 @pytest.mark.test
 def test_example():
-    response = OpenAI(api_key=os.getenv("OPENAI_API_KEY")).responses.create(
-        model="gpt-5-mini",
-        input="Write a one-sentence bedtime story about a unicorn."
-    )
-    print(response.output_text)
+    data = json.loads(fetch_data())
+    text = format_json(data)
+    # docs = split_markdown(text)
+    # print(docs)
 
 
 # Dynamic/Exploratory mode (runtime arguments)

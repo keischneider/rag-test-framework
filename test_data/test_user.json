@@ -1,0 +1,32 @@
+{
+    "transactions": [
+        {
+            "id": 1,
+            "amount": 100,
+            "currency": "USD",
+            "description": "Payment for services"
+        },
+        {
+            "id": 2,
+            "amount": 250,
+            "currency": "EUR",
+            "description": "Refund"
+        }
+    ],
+    "knowledge_base": {
+        "name": "John Doe",
+        "age": 30,
+        "email": "john.doe@example.com",
+        "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "12345"
+        },
+        "preferences": {
+            "contact_method": "email",
+            "newsletter_subscribed": true
+        },
+        "PIN": "1234"
+    }
+}
