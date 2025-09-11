@@ -17,15 +17,22 @@ def json_to_list(data, prefix=""):
 def format_json(data):
     text = ""
     text += "\n\nKnowledge base\n"
-    text += "\n".join(json_to_list(data.get("knowledge_base"), "   "))
+    text += "\n".join(json_to_list(data.get("knowledge_base")))
     text += "\n\nTransactions\n"
     for t in data.get("transactions"):
-        text += "\n".join(json_to_list(t, "   "))
+        text += "\n".join(json_to_list(t))
         text += "\n\n"
     return text
 
 
 def split_markdown(text):
-    # split by Headers using regex
-    # store each chunks along with the header
-    pass
+    pattern = r'Knowledge base|Transactions'
+    matches = list(re.finditer(pattern, text, flags=re.MULTILINE))
+    sections = []
+    for i, match in enumerate(matches):
+        header = text[match.start():match.end()].strip()
+        start = match.end()
+        end = matches[i+1].start() if i+1 < len(matches) else len(text)
+        section_text = text[start:end].strip()
+        sections.append((header, section_text))
+    return sections

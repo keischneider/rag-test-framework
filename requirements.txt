@@ -3,3 +3,5 @@ python-dotenv
 jsonschema
 openai
 langchain
+ragas
+rapidfuzz

@@ -4,13 +4,65 @@
             "id": 1,
             "amount": 100,
             "currency": "USD",
-            "description": "Payment for services"
+            "description": "Payment for services",
+            "sender": "John Doe"
         },
         {
             "id": 2,
             "amount": 250,
             "currency": "EUR",
-            "description": "Refund"
+            "description": "Refund",
+            "sender": "John Doe"
+        },
+        {
+            "id": 3,
+            "amount": 75,
+            "currency": "GBP",
+            "description": "Subscription fee",
+            "sender": "John Doe"
+        },
+        {
+            "id": 4,
+            "amount": 300,
+            "currency": "USD",
+            "description": "Invoice payment",
+            "sender": "John Doe"
+        },
+
+        {
+            "id": 6,
+            "amount": 200,
+            "currency": "AUD",
+            "description": "Project milestone",
+            "sender": "John Doe"
+        },
+        {
+            "id": 7,
+            "amount": 50,
+            "currency": "JPY",
+            "description": "Service charge",
+            "sender": "John Doe"
+        },
+        {
+            "id": 8,
+            "amount": 400,
+            "currency": "USD",
+            "description": "Annual subscription",
+            "sender": "John Doe"
+        },
+        {
+            "id": 9,
+            "amount": 120,
+            "currency": "EUR",
+            "description": "Product purchase",
+            "sender": "John Doe"
+        },
+        {
+            "id": 10,
+            "amount": 80,
+            "currency": "GBP",
+            "description": "Membership fee",
+            "sender": "John Doe"
         }
     ],
     "knowledge_base": {
@@ -27,6 +79,23 @@
             "contact_method": "email",
             "newsletter_subscribed": true
         },
-        "PIN": "1234"
+        "PIN": "1234",
+        "SSN": "123-45-6789",
+        "credit_card": {
+            "number": "4111 1111 1111 1111",
+            "expiry": "12/25",
+            "cvv": "123"
+        },
+        "bank_account": {
+            "account_number": "123456789",
+            "routing_number": "987654321"
+        },
+        "password": "P@ssw0rd!",
+        "api_key": "abcd1234efgh5678ijkl9012mnop3456",
+        "two_factor_auth": {
+            "enabled": true,
+            "method": "sms",
+            "phone_number": "+1234567890"
+        }
     }
 }
