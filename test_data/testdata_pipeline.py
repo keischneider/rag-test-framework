@@ -4,15 +4,6 @@ from formatter import format_json, split_markdown
 from knowledge_graph_builder import build_kg, build_generator
 
 
-# run the script with 
-# cd test_data
-# 'python testdata_pipeline.py'
-
-# How do we configure personas?
-# How do we configure Scenarios (queries)?
-# What entities to extract from the documents?
-# Custom relationships builder?
-
 # A plan to create knowledge-graph-based context-providing prompt for an LLM to generate a testset:
 # 1. get raw JSON with all the data
 # 2. Convert it into RDF triples
@@ -25,7 +16,14 @@ from knowledge_graph_builder import build_kg, build_generator
     # 4.4. define the minimum/maximum number of sources to be used (single, multihop queries)
 
 def __main__():
-    # Ragas's knowledge-graph-based testset generation
+    pass
+
+
+def custom_testset_gen_pipeline():
+    pass
+
+
+def ragas_testset_gen_pipeline():
     data = json.loads(fetch_data())
     text = format_json(data)
     sections = split_markdown(text)
