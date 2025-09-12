@@ -19,11 +19,11 @@ def __main__():
     pass
 
 
-def custom_testset_gen_pipeline():
+def custom_test_dataset_gen_pipeline():
     pass
 
 
-def ragas_testset_gen_pipeline():
+def ragas_test_dataset_gen_pipeline():
     data = json.loads(fetch_data())
     text = format_json(data)
     sections = split_markdown(text)
