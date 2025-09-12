@@ -1,101 +1,229 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "amount": 100,
-            "currency": "USD",
-            "description": "Payment for services",
-            "sender": "John Doe"
-        },
-        {
-            "id": 2,
-            "amount": 250,
-            "currency": "EUR",
-            "description": "Refund",
-            "sender": "John Doe"
-        },
-        {
-            "id": 3,
-            "amount": 75,
-            "currency": "GBP",
-            "description": "Subscription fee",
-            "sender": "John Doe"
-        },
-        {
-            "id": 4,
-            "amount": 300,
-            "currency": "USD",
-            "description": "Invoice payment",
-            "sender": "John Doe"
-        },
-
-        {
-            "id": 6,
-            "amount": 200,
-            "currency": "AUD",
-            "description": "Project milestone",
-            "sender": "John Doe"
-        },
-        {
-            "id": 7,
-            "amount": 50,
-            "currency": "JPY",
-            "description": "Service charge",
-            "sender": "John Doe"
-        },
-        {
-            "id": 8,
-            "amount": 400,
-            "currency": "USD",
-            "description": "Annual subscription",
-            "sender": "John Doe"
-        },
-        {
-            "id": 9,
-            "amount": 120,
-            "currency": "EUR",
-            "description": "Product purchase",
-            "sender": "John Doe"
-        },
-        {
-            "id": 10,
-            "amount": 80,
-            "currency": "GBP",
-            "description": "Membership fee",
-            "sender": "John Doe"
-        }
-    ],
-    "knowledge_base": {
-        "name": "John Doe",
-        "age": 30,
-        "email": "john.doe@example.com",
-        "address": {
-            "street": "123 Main St",
-            "city": "Anytown",
-            "state": "CA",
-            "zip": "12345"
-        },
-        "preferences": {
-            "contact_method": "email",
-            "newsletter_subscribed": true
-        },
-        "PIN": "1234",
-        "SSN": "123-45-6789",
-        "credit_card": {
-            "number": "4111 1111 1111 1111",
-            "expiry": "12/25",
-            "cvv": "123"
-        },
-        "bank_account": {
-            "account_number": "123456789",
-            "routing_number": "987654321"
-        },
-        "password": "P@ssw0rd!",
-        "api_key": "abcd1234efgh5678ijkl9012mnop3456",
-        "two_factor_auth": {
-            "enabled": true,
-            "method": "sms",
-            "phone_number": "+1234567890"
-        }
+  "transactions": [
+    {
+      "id": 1,
+      "amount": 100,
+      "currency": "USD",
+      "description": "Payment for services",
+      "sender": "John Doe",
+      "recipient": "Acme Services LLC",
+      "datetime": "2025-01-10T14:32:00Z"
+    },
+    {
+      "id": 2,
+      "amount": 250,
+      "currency": "EUR",
+      "description": "Refund",
+      "sender": "John Doe",
+      "recipient": "Online Store GmbH",
+      "datetime": "2025-01-12T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "amount": 75,
+      "currency": "GBP",
+      "description": "Subscription fee",
+      "sender": "John Doe",
+      "recipient": "Streaming Co.",
+      "datetime": "2025-01-15T20:00:00Z"
+    },
+    {
+      "id": 4,
+      "amount": 300,
+      "currency": "USD",
+      "description": "Invoice payment",
+      "sender": "John Doe",
+      "recipient": "Freelance Designer",
+      "datetime": "2025-01-20T11:45:00Z"
+    },
+    {
+      "id": 5,
+      "amount": 500,
+      "currency": "CAD",
+      "description": "Salary credit",
+      "sender": "Acme Corp",
+      "recipient": "John Doe",
+      "datetime": "2025-01-25T08:00:00Z"
+    },
+    {
+      "id": 6,
+      "amount": 200,
+      "currency": "AUD",
+      "description": "Project milestone",
+      "sender": "John Doe",
+      "recipient": "Global Consulting Pty",
+      "datetime": "2025-02-01T17:20:00Z"
+    },
+    {
+      "id": 7,
+      "amount": 50,
+      "currency": "JPY",
+      "description": "Service charge",
+      "sender": "John Doe",
+      "recipient": "Tokyo Bank",
+      "datetime": "2025-02-03T13:10:00Z"
+    },
+    {
+      "id": 8,
+      "amount": 400,
+      "currency": "USD",
+      "description": "Annual subscription",
+      "sender": "John Doe",
+      "recipient": "Software Solutions Inc.",
+      "datetime": "2025-02-05T09:40:00Z"
+    },
+    {
+      "id": 9,
+      "amount": 120,
+      "currency": "EUR",
+      "description": "Product purchase",
+      "sender": "John Doe",
+      "recipient": "European Marketplace",
+      "datetime": "2025-02-07T16:55:00Z"
+    },
+    {
+      "id": 10,
+      "amount": 80,
+      "currency": "GBP",
+      "description": "Membership fee",
+      "sender": "John Doe",
+      "recipient": "Fitness Club",
+      "datetime": "2025-02-10T06:30:00Z"
+    },
+    {
+      "id": 11,
+      "amount": 60,
+      "currency": "USD",
+      "description": "ATM withdrawal",
+      "sender": "John Doe",
+      "recipient": "Bank ATM",
+      "datetime": "2025-02-12T18:00:00Z"
+    },
+    {
+      "id": 12,
+      "amount": 1500,
+      "currency": "USD",
+      "description": "Mortgage payment",
+      "sender": "John Doe",
+      "recipient": "Anytown Bank",
+      "datetime": "2025-02-15T10:15:00Z"
+    },
+    {
+      "id": 13,
+      "amount": 220,
+      "currency": "CHF",
+      "description": "Travel booking",
+      "sender": "John Doe",
+      "recipient": "Swiss Travel AG",
+      "datetime": "2025-02-18T21:25:00Z"
+    },
+    {
+      "id": 14,
+      "amount": 95,
+      "currency": "USD",
+      "description": "Utility bill payment",
+      "sender": "John Doe",
+      "recipient": "Anytown Utilities",
+      "datetime": "2025-02-20T08:05:00Z"
+    },
+    {
+      "id": 15,
+      "amount": 45,
+      "currency": "USD",
+      "description": "Mobile recharge",
+      "sender": "John Doe",
+      "recipient": "Telecom Provider",
+      "datetime": "2025-02-22T14:50:00Z"
+    },
+    {
+      "id": 16,
+      "amount": 3000,
+      "currency": "USD",
+      "description": "Stock purchase",
+      "sender": "John Doe",
+      "recipient": "NYSE Broker",
+      "datetime": "2025-02-25T12:35:00Z"
     }
+  ],
+  "knowledge_base": {
+    "name": "John Doe",
+    "age": 30,
+    "email": "john.doe@example.com",
+    "phone": "+1-202-555-0199",
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345",
+      "country": "USA"
+    },
+    "preferences": {
+      "contact_method": "email",
+      "newsletter_subscribed": true,
+      "preferred_currency": "USD",
+      "language": "English"
+    },
+    "employment": {
+      "company": "Acme Corp",
+      "position": "Software Engineer",
+      "salary": 90000,
+      "currency": "USD"
+    },
+    "family": {
+      "marital_status": "Married",
+      "spouse_name": "Jane Doe",
+      "children": [
+        {"name": "Alice Doe", "age": 5},
+        {"name": "Bob Doe", "age": 3}
+      ]
+    },
+    "PIN": "1234",
+    "SSN": "123-45-6789",
+    "credit_card": {
+      "number": "4111 1111 1111 1111",
+      "expiry": "12/25",
+      "cvv": "123"
+    },
+    "bank_account": {
+      "account_number": "123456789",
+      "routing_number": "987654321",
+      "iban": "US64SVBKUS6S3300958879"
+    },
+    "savings_account": {
+      "account_number": "987654321",
+      "balance": 15000,
+      "currency": "USD"
+    },
+    "loans": [
+      {
+        "type": "Mortgage",
+        "balance": 250000,
+        "monthly_payment": 1500,
+        "currency": "USD"
+      },
+      {
+        "type": "Car Loan",
+        "balance": 15000,
+        "monthly_payment": 400,
+        "currency": "USD"
+      }
+    ],
+    "investments": {
+      "stocks": [
+        {"ticker": "AAPL", "shares": 50},
+        {"ticker": "TSLA", "shares": 20}
+      ],
+      "crypto": [
+        {"symbol": "BTC", "amount": 0.5},
+        {"symbol": "ETH", "amount": 10}
+      ]
+    },
+    "password": "P@ssw0rd!",
+    "api_key": "abcd1234efgh5678ijkl9012mnop3456",
+    "two_factor_auth": {
+      "enabled": true,
+      "method": "sms",
+      "phone_number": "+1234567890"
+    }
+  }
 }
