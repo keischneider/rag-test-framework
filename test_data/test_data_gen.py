@@ -1,25 +1,20 @@
 import json
 import time
 from fetcher import fetch_data
-from formatter import format_json, split_markdown
-from knowledge_graph_builder import build_kg, build_generator
+from test_data.ragas.formatter import format_json, split_markdown
+from test_data.ragas.knowledge_graph_builder import build_kg, build_generator
 from rdf_graph_builder import test_rdf_graph, test_json_path_query
 from llm_client import query_llm
 from prompt_controller import get_testdata_prompt_template
 
-# A plan to create knowledge-graph-based context-providing prompt for an LLM to generate a testset:
-# 9/15 update (a substiture for 1, 2 steps)
-# define a sequence of query to knowledge base to get the necessary data in a structured way (e.g. SPARQL or JSONpath queries to get data for each account, for each card, for each personal info, etc.)
-# convert the fetched data into a RDF-like triples
-# 1. get raw JSON with all the data
-# 2. Convert it into RDF triples
-    # a. (optional) filter out unnecessary data
-# 3. Convert RDF triples into "natural" triples for an LLM to process
-# 4. Wrap the text sections into a prompt template to generate test dataset
-    # 4.1. in the prompt template, define personas and scenarios
-    # 4.2. define the expected output format and expected properties (JSONL)
-    # 4.3. define the level of specificity
-    # 4.4. define the minimum/maximum number of sources to be used (single, multihop queries)
+# Plan 🧭
+# convert transaction history into RDF triples
+# extend Personas
+# create different scenarios (e.g. account management, transaction history, fraud detection, customer support, loan applications, investment advice, etc.)
+# create different output formats (depending on evaluation input)
+# create scenarios that query single, multi-hop, and mixed queries
+# create scenarios that require different levels of specificity (high-level, detailed, technical, etc.)
+
 
 def __main__():
     custom_test_dataset_gen_pipeline()
