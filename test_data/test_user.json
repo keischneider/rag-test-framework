@@ -146,6 +146,7 @@
     }
   ],
   "knowledge_base": {
+    "id": 1,
     "name": "John Doe",
     "age": 30,
     "email": "john.doe@example.com",
@@ -177,12 +178,12 @@
         {"name": "Bob Doe", "age": 3}
       ]
     },
-    "PIN": "1234",
     "SSN": "123-45-6789",
     "credit_card": {
       "number": "4111 1111 1111 1111",
       "expiry": "12/25",
-      "cvv": "123"
+      "cvv": "123",
+      "PIN": "1234"
     },
     "bank_account": {
       "account_number": "123456789",

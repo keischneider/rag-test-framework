@@ -5,3 +5,5 @@ openai
 langchain
 ragas
 rapidfuzz
+rdflib
+jsonpath-ng

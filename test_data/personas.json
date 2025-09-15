@@ -1,0 +1,12 @@
+[
+    {"name": "Young Slang User", "age": 25, "location": "Urban", "language_style": "Casual, uses slang", "language": "en"},
+    {"name": "Formal Professional", "age": 40, "location": "Suburban", "language_style": "Formal, professional tone", "language": "en"},
+    {"name": "Tech-Savvy Millennial", "age": 30, "location": "Urban", "language_style": "Tech jargon, concise", "language": "en"},
+    {"name": "Elderly Traditionalist", "age": 70, "location": "Rural", "language_style": "Polite, traditional language", "language": "en"},
+    {"name": "Busy Parent", "age": 35, "location": "Suburban", "language_style": "Direct, to the point", "language": "en"},
+    {"name": "Financial Expert", "age": 45, "location": "Urban", "language_style": "Technical financial terms", "language": "en"},
+    {"name": "Casual User", "age": 28, "location": "Urban", "language_style": "Relaxed, friendly tone", "language": "en"},
+    {"name": "Skeptical Customer", "age": 50, "location": "Suburban", "language_style": "Inquisitive, cautious", "language": "en"},
+    {"name": "Young Professional", "age": 27, "location": "Urban", "language_style": "Ambitious, career-focused", "language": "en"},
+    {"name": "Retired Senior", "age": 68, "location": "Rural", "language_style": "Reflective, nostalgic", "language": "en"}
+]
