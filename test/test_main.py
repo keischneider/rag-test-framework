@@ -10,7 +10,7 @@ from utils.miscellanous import read
 from utils.reporter import publish_report
 from openai import OpenAI
 from test_data.fetcher import fetch_data
-from test_data.ragas.formatter import format_json
+from test_data.ragas_test_data_gen.formatter import format_json
 
 load_dotenv()
 

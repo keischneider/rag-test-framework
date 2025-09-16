@@ -1,0 +1,7 @@
+[
+    {"short_description": "A customer checks their account balance."},
+    {"short_description": "A customer transfers money between accounts."},
+    {"short_description": "A customer disputes a transaction."},
+    {"short_description": "A customer updates their personal information."},
+    {"short_description": "A customer applies for a loan."}
+]

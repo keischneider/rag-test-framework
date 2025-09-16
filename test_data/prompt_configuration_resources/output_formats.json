@@ -1,0 +1,4 @@
+[
+    {"format": "JSONL", "content": "{\"input\": \"<user input>\", \"output\": \"<expected output>\"}"},
+    {"format": "JSONL", "content": "{\"input\": \"<user input>\", \"reference_context\": \"<context used for output generation>\", \"output\": \"<expected output>\"}"}
+]

@@ -1,9 +1,9 @@
 import json
 import time
 from fetcher import fetch_data
-from test_data.ragas.formatter import format_json, split_markdown
-from test_data.ragas.knowledge_graph_builder import build_kg, build_generator
-from rdf_graph_builder import test_rdf_graph, test_json_path_query
+from ragas_test_data_gen.formatter import format_json, split_markdown
+from ragas_test_data_gen.knowledge_graph_builder import build_kg, build_generator
+from rdf_graph_builder import convert_to_triples_from
 from llm_client import query_llm
 from prompt_controller import get_testdata_prompt_template
 
@@ -22,21 +22,19 @@ def __main__():
 
 
 def custom_test_dataset_gen_pipeline():
-    result = test_json_path_query()
-    prompt = get_testdata_prompt_template(
-        result,
-        persona_characteristics="""A young, using slang bank customer who is seeking assistance with their account and transactions.""",
-        scenarios="""1. Checking account balance
-2. Transferring money between accounts
-3. Disputing a transaction
-4. Updating personal information
-5. Applying for a loan""",
-        example_format="""use JSONL format: {"input": "<user_input>", "output": "<expected_output>"}""",
-        num_cases=5)
+    json_data = json.loads(fetch_data())
+    context = convert_to_triples_from(json_data)
+    persona_json = json.loads(fetch_data('prompt_configuration_resources/personas.json'))[0]
+    persona = '\n'.join(json_to_list(persona_json))
+    scenarios_json = json.loads(fetch_data('prompt_configuration_resources/scenarios.json'))
+    scenarios = '\n'.join([scenario['short_description'] for scenario in scenarios_json])
+    output_format_json = json.loads(fetch_data('prompt_configuration_resources/output_formats.json'))
+    output_format = ', '.join(json_to_list(output_format_json[0]))
+    prompt = get_testdata_prompt_template(context, persona, scenarios, output_format)
     response = query_llm(prompt)
     print(response)
     save_to_file(f'test_questions/{int(time.time())}.jsonl', response)
-    pass
+
 
 # raw version
 def ragas_test_dataset_gen_pipeline():
@@ -57,6 +55,19 @@ def save_to_file(filename, content):
             json.dump(content, f, indent=2)
         else:
             f.write(str(content))
+
+
+def json_to_list(data, prefix=""):
+    result = []
+    if isinstance(data, dict):
+        for k, v in data.items():
+            result.extend(json_to_list(v, f"{prefix}{k}: "))
+    elif isinstance(data, list):
+        for i, v in enumerate(data):
+            result.extend(json_to_list(v, f"{prefix}{i}: "))
+    else:
+        result.append(f"{prefix}{data}")
+    return result
 
 
 if __name__ == "__main__":
