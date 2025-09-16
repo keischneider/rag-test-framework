@@ -1,3 +1,0 @@
-Evaluation Report
-====================
-groundedness: 0.9

@@ -2,14 +2,14 @@ import json
 import pytest
 import os
 from dotenv import load_dotenv
-from utils.test_input_generator import generate_test_input
-from utils.translator import translate
+from utilities.test_input_generator import generate_test_input
+from utilities.translator import translate
 from e2e.groundedness import evaluate_groundedness
 from e2e.relevance import evaluate_relevance
-from utils.miscellanous import read
-from utils.reporter import publish_report
+from utilities.miscellanous import read
+from utilities.reporter import publish_report
 from openai import OpenAI
-from test_data.fetcher import fetch_data
+from test_data.utils import fetch_data
 from test_data.ragas_test_data_gen.formatter import format_json
 
 load_dotenv()

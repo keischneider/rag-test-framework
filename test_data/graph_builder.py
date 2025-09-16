@@ -1,6 +1,5 @@
 import json
 import jsonpath_ng
-from fetcher import fetch_data
 
 
 def convert_to_triples_from(json_data):
