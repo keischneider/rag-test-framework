@@ -6,10 +6,8 @@ from test_data.llm_client import query_llm
 from test_data.prompt_controller import get_testdata_prompt_template
 
 # Plan 🧭
-# create different scenarios (e.g. account management, transaction history, fraud detection, customer support, loan applications, investment advice, etc.)
-# create different output formats (depending on evaluation input)
-# create scenarios that query single, multi-hop, and mixed queries
-# create scenarios that require different levels of specificity (high-level, detailed, technical, etc.)
+# create your fist custom evaluator for relevancy
+# think of a usual pipeline from test data generation to evaluation
 
 
 def __main__():
