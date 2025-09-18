@@ -33,13 +33,13 @@ load_dotenv()
     # print(response.output_text)
 
 
-# run the test with 'PYTHONPATH=. pytest -s -m test'
+# run the test with 
+# cd test
+# 'PYTHONPATH=. pytest -s -m test'
 @pytest.mark.test
 def test_example():
-    data = json.loads(fetch_data())
-    text = format_json(data)
-    # docs = split_markdown(text)
-    # print(docs)
+    data = json.loads(fetch_data('../test_data/test_questions/344342342.jsonl').splitlines()[0])
+    print(data["input"])
 
 
 # Dynamic/Exploratory mode (runtime arguments)

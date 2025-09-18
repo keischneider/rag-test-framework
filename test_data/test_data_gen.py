@@ -5,16 +5,12 @@ from test_data.graph_builder import convert_to_triples_from
 from test_data.llm_client import query_llm
 from test_data.prompt_controller import get_testdata_prompt_template
 
-# Plan 🧭
-# create your fist custom evaluator for relevancy
-# think of a usual pipeline from test data generation to evaluation
-
 
 def __main__():
-    custom_test_dataset_gen_pipeline()
+    test_dataset_gen_pipeline()
 
 
-def custom_test_dataset_gen_pipeline():
+def test_dataset_gen_pipeline():
     json_data = json.loads(fetch_data('test_data/prompt_configuration_resources/test_user.json'))
     context = convert_to_triples_from(json_data)
     persona_json = json.loads(fetch_data('test_data/prompt_configuration_resources/personas.json'))[7]
@@ -27,6 +23,14 @@ def custom_test_dataset_gen_pipeline():
     response = query_llm(prompt)
     print(response)
     save_to_file(f'test_data/test_questions/{int(time.time())}.jsonl', response)
+
+
+def eval_relevancy():
+    # TODO: implement relevancy evaluation
+    # query RAG with the question from the generated test data
+    # RAG will return me the retrieved context and the answer (the retrived context will be used for groundedness evaluation)
+    # compare the answer from RAG with the answer from the generated test data
+    pass
 
 
 # run with python -m test_data.test_data_gen
