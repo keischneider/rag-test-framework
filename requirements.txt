@@ -8,3 +8,6 @@ rapidfuzz
 rdflib
 jsonpath-ng
 ipykernel
+matplotlib
+seaborn
+pandas
