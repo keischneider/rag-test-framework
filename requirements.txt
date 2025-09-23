@@ -9,5 +9,6 @@ rdflib
 jsonpath-ng
 ipykernel
 matplotlib
+scipy
 seaborn
 pandas
