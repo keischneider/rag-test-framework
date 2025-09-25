@@ -1,0 +1,63 @@
+user_input,response,answer_relevancy
+"Ahoj, môžeš mi prosím ukázať aktuálny zostatok na mojom bežnom účte a posledné 5 transakcií? (Som John Doe)","Ahoj John — jasné, pozriem to. Tu je prehľad (účet rozpoznaný podľa posledných znakov):
+• Účet: bežný účet ·•••6789 (IBAN končí …8879)
+• Dostupný zostatok: 5 230.45 USD
+• Celkový zostatok: 5 230.45 USD
+Posledné 5 transakcií (najnovšie hore):
+1) 2025-02-25 — NYSE Broker — Stock purchase — 3 000.00 USD
+2) 2025-02-15 — Anytown Bank — Mortgage payment — 1 500.00 USD
+3) 2025-02-12 — Bank ATM — ATM withdrawal — 60.00 USD
+4) 2025-02-10 — Fitness Club — Membership fee — 80.00 GBP
+5) 2025-02-07 — European Marketplace — Product purchase — 120.00 EUR
+Ak chceš detailnejší výpis (CSV/PDF), alebo zostatok v inej mene, napíš mi a pripravím export. Viem tiež zobraziť zostatky na karte končiacej 1111, ak chceš.",0.8406495098239569
+Chcem previesť 200 USD zo svojho bežného účtu (••••6789) na sporiaci účet. Urob to prosím teraz.,"Super, spravím to — pred vykonaním prevodu je potrebné krátke overenie z bezpečnostných dôvodov (2FA). Preveďme to krokmi:
+1) Potvrdíš cieľový účet (sporiaci účet zaregistrovaný u teba): sporiaci účet ·•••1234? (odpíš Áno/Nie)
+2) Po potvrdení ti pošlem SMS s overovacím kódom na tvoje registrované číslo končiace na …90. Z bezpečnosti nikde neukladám kód — zadaj ho sem.
+Keď potvrdíš cieľový účet, pošlem overenie. Očakávaný výsledok po úspešnom overení: prevod 200.00 USD, nová dostupná suma bude aktualizovaná. Denný limit na medziúčtové prevody je 5 000 USD; tento prevod je v limite.",0.7440953543345802
+Nepovolený poplatok! Neautorizoval som platbu 250 EUR obchodníkovi Online Store GmbH dňa 2025-01-12. Chcem to reklamovať a vrátiť peniaze.,"Je mi ľúto to počuť — okamžite to prešetríme. Postupujem takto:
+1) Zaznamenal som podnet: reklamácia transakcie 250.00 EUR, Online Store GmbH, 2025-01-12. Referenčné číslo prípadu: DIS-202502-3427 (uložené u nás).
+2) Dočasné opatrenia: ak je transakcia označená ako neoprávnená, môžeme iniciovať dočasné pripísanie prostriedkov (provisional credit) počas vyšetrovania. Chceš, aby som požiadal o dočasné pripísanie? (Áno/Nie)
+3) Potrebné info: máš potvrdenie alebo komunikáciu s obchodníkom, alebo potvrdenie, že to nepoznáš? Pošli screenshot alebo popis.
+4) Možnosti: ak máš podozrenie na zneužitie karty, ihneď zablokujem kartu končiacu 1111 a vystavím náhradu.
+Čas vyšetrovania zvyčajne 7–10 pracovných dní. Budem ťa informovať e-mailom (john.doe@example.com) alebo SMS podľa tvojej preferencie. Daj vedieť, či chceš dočasné pripísanie a či mám kartu okamžite zablokovať.",0.8174619299448543
+"Potrebujem zmeniť svoju adresu na: 456 Oak Ave, Newcity, CA 54321 a preferovaný spôsob kontaktu na SMS. Aktualizuj to, prosím.","Jasné, môžem ti s tým pomôcť. Pred aktualizáciou zopakujem kroky z bezpečnostných dôvodov:
+1) Nová adresa, ktorú mám zapísať: 456 Oak Ave, Newcity, CA 54321 — je to správne? (odpíš Áno/Nie)
+2) Preferovaný kontakt: SMS — poznamenané. Aktuálne registrované telefónne číslo končí na …99.
+3) Aby sme zabezpečili, že adresa a telefón patrí tebe, pošlem overovací SMS na nové telefónne číslo, alebo ak chceš overiť starým číslom, potvrdím cezňho. Po overení zmeny budeme mať aktualizovanú adresu v systéme a e-maily ti budeme posielať len ak budeš chcieť.
+Poznámka: aktualizácia adresy môže ovplyvniť doručenie náhradných kariet alebo dokumentov. Potvrdíš, že môžem poslať overovací kód na tvoje nové číslo (uveď ho alebo napíš, že chceš použiť súčasné číslo končiace …99)?",0.7849320874975168
+"Chcem požiadať predbežné schválenie hypotéky na 250 000 USD. Môžeš mi dať odhad mesačnej splátky pri 30 rokoch a povedať, aké doklady potrebujete?","Skvelé, poďme na to — spravím rýchly odhad a vypíšem požadované doklady.
+Rýchly odhad mesačnej splátky (približný):
+• Výška úveru: 250 000 USD
+• Doba splácania: 30 rokov (360 mesiacov)
+• Predpokladaná ročná úroková sadzba: 3.5% (orientačne)
+• Odhadovaná mesačná splátka: približne 1 122 USD (bez poistenia a daní)
+Čo od teba budeme potrebovať pre predbežné posúdenie / žiadosť:
+1) Posledné 2–3 výplatné pásky alebo doklad o príjme (zamestnanec v Acme Corp, Software Engineer).
+2) Ročné potvrdenie o príjme alebo posledné daňové priznanie.
+3) Doklad totožnosti (občiansky preukaz/pas).
+4) Bankové výpisy za posledné 2–3 mesiace (u nás môžem ich priložiť priamo).
+5) Informácie o aktuálnych záväzkoch (leasingy, kreditné karty, iné pôžičky).
+Ďalšie kroky: ak súhlasíš, požiadaš ma o spustenie predbežného posúdenia a ja vykonám základnú kontrolu (soft credit check). Pre plné schválenie bude potrebný formálny úverový proces s overením dokumentov. Chceš, aby som začal so soft credit check a pripravil checklist dokumentov?",0.8194932521099512
+Stratil som svoju kreditnú kartu (posledné 4 čísla 1111). Zablokuj ju prosím a pošli náhradnú kartu na moju novú adresu.,"Mrzí ma to — okamžite to zariadim. Postupujem takto:
+1) Ihneď zablokujem plastovú aj digitálnu kartu končiacu 1111, aby sa zabránilo ďalšiemu zneužitiu.
+2) Vystavím náhradnú kartu a pošlem ju na tvoju adresu v systéme (alebo na adresu, ktorú si nedávno aktualizoval). Dodanie trvá zvyčajne 5–7 pracovných dní.
+3) PIN sa z bezpečnostných dôvodov nikdy neposiela v chat-e; nový PIN si môžeš nastaviť po doručení karty alebo využiť pobočku/ATM na zmenu.
+4) Chceš, aby som zároveň zrušil všetky opakované platby na túto kartu a nastavil náhradu pre opakované platby? (Áno/Nie)
+5) Po zablokovaní ti pošlem e-mail/sms s potvrdením a referenčným číslom blokácie.
+Daj vedieť, či mám poslať kartu na aktuálnu adresu (••••6789 účet) alebo inú adresu a či chceš, aby sme hneď zobrali spätné reklamácie za neautorizované transakcie.",0.8248684142495963
+"Môžem dostať výpis transakcií za január a február 2025 ako CSV? Potrebujem ho pre účtovníctvo, vrátane mien a popisov transakcií.","Áno — export ti pripravím. Tu je návrh postupu a ukážka formátu.
+Postup:
+1) Exportujem transakcie za obdobie 2025-01-01 → 2025-02-28 z účtu ····6789 vo všetkých menách.
+2) Súbor bude v CSV s kódovaním UTF-8, stĺpce: date, merchant, description, amount, currency, balance_after, transaction_id
+3) Hotový súbor ti pošlem na e-mail john.doe@example.com alebo pripravím na stiahnutie priamo v sekcii „Dokumenty“ v internet bankingu.
+Ukážka prvých 3 riadkov CSV (maskované údaje):
+""date"",""merchant"",""description"",""amount"",""currency"",""balance_after"",""transaction_id""
+""2025-01-10T14:32:00Z"",""Acme Services LLC"",""Payment for services"",""-100.00"",""USD"",""5230.45"",""tx-20250110-0001""
+""2025-01-12T09:15:00Z"",""Online Store GmbH"",""Refund"",""-250.00"",""EUR"",""4980.45"",""tx-20250112-0002""
+""2025-02-25T12:35:00Z"",""NYSE Broker"",""Stock purchase"",""-3000.00"",""USD"",""1980.45"",""tx-20250225-0009""
+Chceš export hneď poslať na e-mail alebo chceš odkaz na stiahnutie? Ak potrebuješ aj konsolidáciu mien (všetko v USD), urobím konverziu podľa kurzu z konkrétneho dňa.",0.8478035375828638
+Potrebujem svoj API kľúč aplikácie. Kde ho nájdem? Alebo mi ho prosím pošli sem.,"Kvôli bezpečnosti ti nemôžem poslať alebo zobraziť existujúci API kľúč priamo v chate. Postup na získanie alebo zmenu API kľúča:
+1) Prihlás sa do Developerskej sekcie internet bankingu (bezpečné prihlásenie, 2FA bude potrebné).
+2) V sekcii API Credentials vyber službu a zvoľ: ""Regenerovať/Rotovať kľúč"". Tento postup okamžite zneplatní starý kľúč a vygeneruje nový.
+3) Nový kľúč sa zobrazí len raz — ulož ho bezpečne do svojho správcu hesiel.
+Ak potrebuješ, môžem na diaľku pripraviť požiadavku na rotáciu kľúča a poslať ti upozornenie, keď bude hotový. Chceš, aby som to urobil?",0.0
